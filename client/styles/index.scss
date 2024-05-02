@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+html, 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../styles/wow.webp);
+  background-size: cover;
+  color: #1a1818;
+  min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  padding: 60px 20px; /* Adjusted padding for better spacing */
+  text-align: center;
+}
+
+/* Header styles */
+.header {
+  padding: 30px 0;
+  border-bottom: 3px solid #ffd700;
+}
+
+.header h1 {
+  font-size: 36px; /* Adjusted font size for responsiveness */
+  margin: 0;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu styles */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 20px 0; /* Adjusted margin for better spacing */
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Animation keyframes */
+@keyframes playPiano {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Form group styles */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: calc(100% - 40px); /* Adjusted width for better spacing */
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color:  rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #000;
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffd700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Error message styles */
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+.button.login {
+  background-color: #ff5e5e;
+  color: #fff;
+}
+
+.button.donate {
+  background-color: #00b894;
+  color: #fff;
+}
+
+/* Form container styles */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+/* Form container hover effect */
+.form-container:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Form input styles */
+.form-input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Form button styles */
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color:#000;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+
+// .menu li {
+//   animation-duration: 0.5s; /* Adjust the duration as needed */
+//   animation-timing-function: ease-in-out; /* Adjust the timing function as needed */
+//   animation-iteration-count: infinite; /* Infinite loop */
+// }
+
+// .menu li:nth-child(1) {
+//   animation-name: moveUp; /* Apply moveUp animation to the first button */
+// }
+
+// .menu li:nth-child(2) {
+//   animation-name: moveDown; /* Apply moveDown animation to the second button */
+// }
+
+
+
+
+// @keyframes moveUp {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-10px); /* Adjust the distance as needed */
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes moveDown {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(10px); /* Adjust the distance as needed */
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
